@@ -1,0 +1,25 @@
+@import "vars";
+
+.footer {
+    position: relative;
+    margin-top: 99px;
+    min-height: 157px;
+    background-image: url(../images/footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+
+    &__txt {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+       font-family: $secondary-font;
+       font-weight: 300;
+       font-style: italic;
+       font-size: 20px;
+       line-height: 27px;
+       text-transform: capitalize;
+       color:$light;
+      
+    }
+}

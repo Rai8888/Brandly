@@ -1,0 +1,53 @@
+@import "vars";
+
+.category {
+    padding: 60px 0;
+
+    &__item {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         min-height: 419px;
+         background-image: url(../images/men.jpg);
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center;
+         filter: grayscale(100%);
+         &:hover {
+            filter: grayscale(0%);
+        }
+
+        &--women {
+            background-image: url(../images/women.jpg);
+            &:hover {
+                filter: grayscale(0%);
+            }
+        }
+        &--accessories{
+            background-image: url(../images/access.jpg);
+            &:hover {
+                filter: grayscale(0%);
+            }
+        }
+    }
+
+    &__title {
+        margin: 0;
+    }
+
+    &__link {
+        font-family: $secondary-font;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 40px;
+        line-height: 40px;
+        text-transform: capitalize;
+        color: $light;
+        text-decoration: none;
+ 
+
+        &:hover {
+            color: $accent;
+        }
+    }
+}
